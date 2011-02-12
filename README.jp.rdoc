@@ -11,7 +11,7 @@
 
 = リポジトリ内ファイルの説明
 * Language_ja.properties.6.work ... Liferay Portal 6.x向けJLP、ここにあるものが6.x向け最新版となります。(翻訳対象)
-* liferay.com ... liferay.comサイト向けの特別なJLPです。通常ダウンロードして使うLiferay Portalに使うものではありません。
+* liferay.com ... liferay.comサイト向けの特別なJLPを含むディレクトリです。ここにあるファイルは通常使うLiferay Portalに適用するものではありません。
    Language_ja.properties (翻訳対象)
    osb-Language_ja.properties (翻訳対象)
 * NEWS ... 翻訳期限などのニュースです。
@@ -20,20 +20,21 @@
 
 = 翻訳プロセス
 === その1 (作業対象: Language_ja.properties.6.work)
-1. 新バージョンのLiferay Portalリリースに向け、JLP更新依頼が Forum[http://www.liferay.com/web/guest/community/forums] 上で呼びかけられる。
-2. mryoshioが本プロジェクトのJLPとliferay svnの最新版をマージ。 *1
+1. 新バージョンのLiferay Portalリリースに向け、JLP更新依頼が Forum[http://www.liferay.com/web/guest/community/forums] 上で呼びかけられる。 *1
+2. 各人が本プロジェクトのForkリポジトリ上でJLPとliferay svnの最新版をマージ。 *2
 3. 各人が本プロジェクトのForkリポジトリ上で、JLP内の'(Automatic Copy)'または'(Automatic Translation)'となっている箇所を翻訳する。同時に誤訳を修正、既存の訳を洗練させる。
 4. mryoshioが各人の翻訳をマージ。
 5. mryoshioがJIRAチケットを作成し、Liferayへ報告。
 
-*1:: 手順2, 3, 4を翻訳期限内に何度か繰り返すことになります。翻訳期限はNEWSに記述します。
+*1:: この時に翻訳期限が伝えられるので、NEWSに記述するようにします。
+*2:: 手順2, 3, 4を翻訳期限内に何度か繰り返すことになります。なお、2に関してはmryoshioがほぼ毎日svnの最新版をマージするのでそこからrebaseしてもらっても構いません。
 
 === その2 (作業対象: liferay.comディレクトリ配下のLanguage_ja.properties、osb-Language_ja.properties)
-1. 各人が本プロジェクトのForkリポジトリ上で、JLP内の'(Automatic Copy)'または'(Automatic Translation)'となっている箇所を翻訳する。同時に誤訳を修正、既存の訳を洗練させる。*2
-2. ある程度形になったところでmryoshioがLiferayへ送付。 *3
+1. 各人が本プロジェクトのForkリポジトリ上で、JLP内の'(Automatic Copy)'または'(Automatic Translation)'となっている箇所を翻訳する。同時に誤訳を修正、既存の訳を洗練させる。*3
+2. ある程度形になったところでmryoshioがLiferayへ送付。 *4
 
-*2:: この作業には現在期限がありません。気が向いた時に作業してください。
-*3:: 未確定、JIRAチケットを作成するかもしれません。
+*3:: この作業には現在期限がありません。気が向いた時に作業してください。
+*4:: 未確定、JIRAチケットを作成するかもしれません。
 
 = 翻訳作業時の注意点
 [ファイルエンコーディングについて] 必ず<b>UTF-8</b>にしてください。
@@ -43,7 +44,7 @@
 [その他] 自分の翻訳が取り込まれないからといって怒らないでください。本当にお願いいたします。
 
 = 翻訳作業の参加資格
-ありません。真面目にやってくださる方ならぜひご協力ください。
+ありません。真面目にやってくださる方ならひじょうに助かります。
 
 = 最後に
 いろいろ経緯があり、Liferayから日本語の翻訳リーダを任されています。過去はクローズドな感じで鬱々と作業していたのですが、ずっと共同作業にしたいと考えていました。先日liferay.comの日本語も任されたのを機に共同作業に切り替えるために本プロジェクトを設けました。このプロジェクトがLiferayをより良いものにする一助になれば幸いです。
