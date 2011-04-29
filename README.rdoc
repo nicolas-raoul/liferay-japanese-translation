@@ -3,43 +3,24 @@
 作成日:: 2011/02/11
 ライセンス:: Liferay Portal本体と同じ
 
+== 注意1: これはLiferay非公式のプロジェクトです。
+== 注意2: このプロジェクトは、最新バージョンLiferay日本語リソースの翻訳を扱いません
+- http://www.liferay.com/ja/community/wiki/-/wiki/Main/Translating+Liferay+using+Pootle
+- http://translate.liferay.com/pootle/
+上記リンクにある通り、最新バージョンLiferay日本語リソースに対しては、
+Pootle[http://translate.sourceforge.net/wiki/pootle/index] を利用したWeb翻訳が行われています。
+ご希望の方はそちらへどうぞ
 
 = 本プロジェクトについて
-- Liferay社[https://www.liferay.com/about-us] が提供するLiferay Portalに含まれる日本語ランゲージパック (以下、JLP)を洗練させるためのプロジェクトです。
-- Liferay Portalで構築されているLiferay Webサイト[http://liferay.com/] 向けの特別なJLPの作成もこの場で行います。
-
+- Liferay社[https://www.liferay.com/about-us] が提供するLiferay Portalの過去バージョンの日本語ランゲージパック (以下、JLP)を洗練させるためのプロジェクトです。
 
 = リポジトリ内ファイルの説明
-* Language_ja.properties.6.work ... Liferay Portal 6.x向けJLP、ここにあるものが6.x向け最新版となります。(翻訳対象)
-* liferay.com ... liferay.comサイト向けの特別なJLPを含むディレクトリです。ここにあるファイルは通常使うLiferay Portalに適用するものではありません。
-   Language_ja.properties (翻訳対象)
-   osb-Language_ja.properties (翻訳対象)
-* NEWS ... 翻訳期限などのニュースです。
+* Language_ja.properties.6.0.6 ... Liferay Portal 6.0.6x向け
+* NEWS ... ニュース
 * README ... 本ファイルです。翻訳前には必ず目を通してください。
-
-
-= 翻訳プロセス
-=== その1 (作業対象: Language_ja.properties.6.work)
-1. 新バージョンのLiferay Portalリリースに向け、JLP更新依頼が Forum[http://www.liferay.com/web/guest/community/forums] 上で呼びかけられる。 *1
-2. 各人が本プロジェクトのForkリポジトリ上でJLPとliferay svnの最新版をマージ。 *2
-3. 各人が本プロジェクトのForkリポジトリ上で、JLP内の'(Automatic Copy)'または'(Automatic Translation)'となっている箇所を翻訳する。同時に誤訳を修正、既存の訳を洗練させる。
-4. mryoshioが各人の翻訳をマージ。
-5. mryoshioがJIRAチケットを作成し、Liferayへ報告。
-
-*1:: この時に翻訳期限が伝えられるので、NEWSに記述するようにします。
-*2:: 手順2, 3, 4を翻訳期限内に何度か繰り返すことになります。なお、2に関してはmryoshioがほぼ毎日svnの最新版をマージするのでそこからrebaseしてもらっても構いません。
-
-=== その2 (作業対象: liferay.comディレクトリ配下のLanguage_ja.properties、osb-Language_ja.properties)
-1. 各人が本プロジェクトのForkリポジトリ上で、JLP内の'(Automatic Copy)'または'(Automatic Translation)'となっている箇所を翻訳する。同時に誤訳を修正、既存の訳を洗練させる。*3
-2. ある程度形になったところでmryoshioがLiferayへ送付。 *4
-
-*3:: この作業には現在期限がありません。気が向いた時に作業してください。
-*4:: 未確定、JIRAチケットを作成するかもしれません。
 
 = 作業時の注意点
 [ファイルエンコーディングについて] 必ず<b>UTF-8</b>にしてください。
-
-[プロセスその1に関して] 翻訳作業期間中に、mryoshioがsvn最新版をほぼ毎日マージするので注意してください。未翻訳箇所が日々増えます。
 
 [その他] 自分の翻訳が取り込まれないからといって怒らないでください。本当にお願いいたします。
 
@@ -47,6 +28,6 @@
 ありません。真面目にやってくださる方ならひじょうに助かります。
 
 = 最後に
-いろいろ経緯があり、Liferayから日本語の翻訳リーダを任されています。過去はクローズドな感じで鬱々と作業していたのですが、ずっと共同作業にしたいと考えていました。先日liferay.comの日本語も任されたのを機に共同作業に切り替えるために本プロジェクトを設けました。このプロジェクトがLiferayをより良いものにする一助になれば幸いです。
+このプロジェクトがLiferayをより良いものにする一助になれば幸いです。
 
 
