@@ -1,4 +1,4 @@
-= Lifery Japanese Translation
+= Liferay Japanese Translation
 著者:: mryoshio (ashitaba.yoshioka _at_ aegif.jp)
 作成日:: 2011/02/11
 ライセンス:: Liferay Portal本体と同じ
